@@ -1,2 +1,23 @@
-# MachineLearning-R
-Sobre o livro "Introduction to Machine Learning with R: Rigorous Mathematical Modeling" de Scott V. Burger.
+# Intro to Machine Learning with R: Rigorous Mathematical Analysis
+
+## Capítulo 1. O que são Modelos?
+*Modelos* são úteis porque diferentemente de dashboards, que oferecem uma imagem estática doque os dados mostram atualmente (ou em um dado momento), modelos conseguem ir além e ajudam a entender o futuro.
+
+Foram incontáveis os dashboards que já vi ou construí que simplesmente diz "é assim que muitos ativos estão no momento". Ou, "este é o nosso indicador chave para hoje".
+
+Um relatório é uma entidade estática que não oferece uma intuição sobre como as coisas evoluem com o tempo.
+```R
+# Mostra o que um relatório se parece
+op <- par(mar = c(10, 4, 4, 2) + 0.1)  # margin formatting
+barplot(mtcars$mpg, names.arg = row.names(mtcars), las=2, ylab="Fuel
+        Efficiency in Miles per Gallon")
+```
+![5dda4694-7743-45e7-b542-fe174a9ac56e](https://github.com/user-attachments/assets/a0f5d0a4-122c-434d-a579-677c4c60e22c)
+A figura representa um gráfico do dataset *mtcars*.
+
+A figura mostra a quantidade de carros plotada de acordo com sua eficiência de combustível em milhas por galão. Esse relatório não nos dá nenhum poder preditivo.
+
+Ver como a eficiência dos carros está distribuída é interessante, mas como podemos relacionar isso com outros aspectos dos dados e, além disso, fazer previsões a partir disso?
+
+<table><tr><td>Um modelo é qualquer tipo de função que possui algum poder preditivo.</td></tr></table>
+
