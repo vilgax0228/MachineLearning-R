@@ -8,11 +8,11 @@ Foram incontáveis os dashboards que já vi ou construí que simplesmente diz "�
 Um relatório é uma entidade estática que não oferece uma intuição sobre como as coisas evoluem com o tempo.
 ```R
 # Mostra o que um relatório se parece
-op <- par(mar = c(10, 4, 4, 2) + 0.1)  # margin formatting
-barplot(mtcars$mpg, names.arg = row.names(mtcars), las=2, ylab="Fuel
+> op <- par(mar = c(10, 4, 4, 2) + 0.1)  # margin formatting
+> barplot(mtcars$mpg, names.arg = row.names(mtcars), las=2, ylab="Fuel
         Efficiency in Miles per Gallon")
 ```
-![5dda4694-7743-45e7-b542-fe174a9ac56e](https://github.com/user-attachments/assets/a0f5d0a4-122c-434d-a579-677c4c60e22c)
+![rplot mtcars](https://github.com/user-attachments/assets/e07f09af-94d3-4484-9bcf-f1248bd5c4e2)
 A figura representa um gráfico do dataset *mtcars*.
 
 A figura mostra a quantidade de carros plotada de acordo com sua eficiência de combustível em milhas por galão. Esse relatório não nos dá nenhum poder preditivo.
