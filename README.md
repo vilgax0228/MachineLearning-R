@@ -12,7 +12,8 @@ Um relatório é uma entidade estática que não oferece uma intuição sobre co
 > barplot(mtcars$mpg, names.arg = row.names(mtcars), las=2, ylab="Fuel
         Efficiency in Miles per Gallon")
 ```
-![rplot mtcars](https://github.com/user-attachments/assets/e07f09af-94d3-4484-9bcf-f1248bd5c4e2)
+![Rplot01](https://github.com/user-attachments/assets/e9f78f9d-44a8-40e9-a96d-df781a646058)
+
 A figura representa um gráfico do dataset *mtcars*.
 
 A figura mostra a quantidade de carros plotada de acordo com sua eficiência de combustível em milhas por galão. Esse relatório não nos dá nenhum poder preditivo.
