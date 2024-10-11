@@ -83,6 +83,11 @@ Aqui, estamos principalmente interessados em algo que pareça ter algum tipo de 
 
 Note que "mpg em função de cyl" parece muito diferente de "mpg em função de wt (peso)". Neste caso, focamos no último, como mostrado abaixo:
 
+```R
+> plot(y=mtcars$mpg, x=mtcars$wt, xlab="Peso do Veículo",
+       ylab="Eficiência de Combustível em mpg")
+```
+
 ![Rplot03](https://github.com/user-attachments/assets/c8a4457f-8166-414a-80f5-68833e27cd0c)
 
 Esse gráfico é a base para traçar um linha de regressão através dos dados.
