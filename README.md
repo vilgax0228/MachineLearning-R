@@ -40,7 +40,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
 ```
 Ao simplesmente chamar o objeto mtcars no R, podemos ver todos os tipos de colunas nos dados para escolher e construir um modelo de machine learning (ML).
 
-No mundo do ML, as colunas de dados às vezes também são chamadas de *features* (características), como é mostrado abaixo:
+No mundo do ML, as colunas de dados às vezes também são chamadas de características (*features*), como é mostrado abaixo:
 ```R
 > pairs(mtcars[1:7], lower.panel=NULL)
 ```
@@ -53,7 +53,7 @@ Cada caixa é um gráfico separado, em que a variável dependente é o texto na 
 Alguns desses gráficos são mais interessantes para fins de tendência do que outros.  
 Nenhum dos gráficos na linha *cyl*, por exemplo, parece se adaptar facilmente a modelagens de regressão simples.
 
-Neste exemplo, estamos plotando algumas dessas features em relação a outras. As colunas, ou features, desses dados são definidas da seguinte maneira:
+Neste exemplo, estamos plotando algumas dessas features em relação a outras. As *colunas*, ou *features*, ou ainda, *variáveis* desses dados são definidas da seguinte maneira:
 
 * mpg (miles per US gallon): milhas por galão;
 
