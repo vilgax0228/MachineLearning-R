@@ -121,14 +121,37 @@ Esse tipo específico de modelo de machine learning é chamado de *regressão li
 ---
 ### Algoritmos vs Modelos: Qual a Diferença?
 
+*Um algoritmo é um conjunto de etapas executadas em ordem*.
 
+O algoritmo mais simples para regressão linear envolve colocar dois pontos em um gráfico e depois traçar uma linha entre eles. Você obtém as partes importantes da equação (inclinação e intercepto) ao tomar a diferença nas coordenadas desses pontos em relação a uma origem.
 
+O algoritmo se torna mais complicado quando você tenta fazer o mesmo procedimento para mais de dois pontos, naturalmente.
 
+Um modelo de ML, como regressão, clusterização ou redes neurais, depende do funcionamento de algoritmos para ajudar a operá-los antes de qualquer coisa. Eles fazem todo o trabalho pesado de multiplicar matrizes, otimizar resultados e gerar um número para usarmos.
 
+Existem muitos tipos de modelos no R, que abrangem um ecossistema de ML de forma mais geral. Há três tipos principais de modelos: modelos de regressão, modelos de classificação e um mix de ambos.
 
+A chamada de função para uma regressão linear simples no R pode ser escrita como: *lm(x ~ y), que significa, me dê o modelo linear para a variável y como uma função da característica x.
 
+*lm()* é, por si só, uma função, mas também é um modelo linear. Ele chama uma série de algoritmos para encontrar os melhores valores que são então fornecidos como uma inclinação e um intercepto. Em seguida, usamos essas inclinações e interceptos para construir uma equação, que podemos usar para análises futuras.
 
+### Limitações da Modelagem
 
+* "All models are wrong, but some are useful." - Statistician George Box
+
+Um modelo é uma representação simplificada da realidade.
+
+Voltando ao nosso exemplo com o mtcars, as limitações do nosso modelo vêm dos dados, especificamente do tempo em que foram coletados e do número de pontos de dados.
+
+Estamos fazendo suposições bastante ousadas sobre as eficiências de combustível dos carros hoje em dia se tentarmos inserir apenas o peso de um veículo moderno em um modelo que foi construído inteiramente a partir de carros fabricados na década de 1970.
+
+Da mesma forma, há muitos poucos pontos de dados no conjunto para começar. trinta e dois pontos pontos de dados é bastante baixo para fazer afirmações definitivas sobre aeficiência de combustível de *qualquer* carro.
+
+Quando George Box diz que todos os modelos estão errados, ele quer dizer que todos os modelos tèm algum erro atribuído a eles.
+
+Modelos de regressão têm uma maneira específica de medir o erro chamada *coeficiente de determinação*, frequentemente referido como o valor "R-square". Esta é uma medida de quão bem os dados se ajustam à linha do modelo ajustado, com valores variando de 0 a 1.
+
+### Estatística e Computação na Modelagem
 
 
 
